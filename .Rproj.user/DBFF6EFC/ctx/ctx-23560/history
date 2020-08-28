@@ -1,0 +1,430 @@
+devtools::install_github("rstudio/ptexamples")
+install.packages("rstudio/ptexamples")
+install.packages(shiny)
+rmarkdown::render_site()
+install.packages("rmarkdown")
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+install.package(knitr)
+install.packages("knitr")
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+install.packages("mailR")
+send.mail((from="rahul254771@gmail.com",
+to="rahulperumpallil@gmail.com",
+subject = "test sample mail",
+body = "hello world",
+smtp = list(host.name="smtp.gmail.com",port=465,user.name="rahul254771@gmail.com",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send=TRUE))
+send.mail(from="rahul254771@gmail.com",
+to="rahulperumpallil@gmail.com",
+subject = "test sample mail",
+body = "hello world",
+smtp = list(host.name="smtp.gmail.com",port=465,user.name="rahul254771@gmail.com",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send=TRUE)
+require("mailR")
+send.mail(from="rahul254771@gmail.com",
+to="rahulperumpallil@gmail.com",
+subject = "test sample mail",
+body = "hello world",
+smtp = list(host.name="smtp.gmail.com",port=465,user.name="rahul254771@gmail.com",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send=TRUE)
+require("mailR")
+send.mail(from="rahul254771@gmail.com",
+to="rahulperumpallil@gmail.com",
+subject = "test sample mail",
+body = "hello world",
+smtp = list(host.name="smtp.gmail.com",port=465,user.name="rahul254771@gmail.com",password="PASS"4771gopalan",ssl=TRUE),
+authenticate = TRUE,
+send=TRUE)
+require("mailR")
+send.mail(from="rahul254771@gmail.com",
+to="rahulperumpallil@gmail.com",
+subject = "test sample mail",
+body = "hello world",
+smtp = list(host.name="smtp.gmail.com",port=465,user.name="rahul254771@gmail.com",password="PASS"4771gopalan",ssl=TRUE),
+authenticate = TRUE,
+send=TRUE)
+require("mailR")
+send.mail(from="rahul254771@gmail.com",
+to="rahulperumpallil@gmail.com",
+subject = "test sample mail",
+body = "helloworld",
+smtp = list(host.name="smtp.gmail.com",port=465,user.name="rahul254771@gmail.com",password="PASS"4771gopalan",ssl=TRUE),
+authenticate = TRUE,
+send=TRUE )
+require("mailR")
+sender <- "rahul254771@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "aspmx.l.google.com", port = 25),
+authenticate = FALSE,
+send = FALSE)
+require("mailR")
+sender <- "rahul254771@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "aspmx.l.google.com", port = 25),
+authenticate = FALSE,
+send = TRUE)
+require("mailR")
+sender <- "rahul254771@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 25),
+authenticate = FALSE,
+send = TRUE)
+require("mailR")
+sender <- "rahul254771@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+sender <- "rahul254771@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="rahul254771@gmail.com",password="PASS"4771gopalan",ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+sender <- "rahul254771@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465),
+authenticate = FALSE,
+send = TRUE)
+require("mailR")
+sender <- "rahul254771@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="rahul254771@gmail.com",password="PASS"4771gopalan",ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+sender <- "rahul254771@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="rahul254771@gmail.com",password="4771gopalan",ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahul254771@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="rahul254771@gmail.com",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahuldon.v@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="rahul254771@gmail.com",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahuldon.v@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="rahul254771",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahuldon.v@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="rahul254771",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahuldon.v@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="rahul254771",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahuldon.v@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="rahul254771@gmail.com",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahuldon.v@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="rahul254771@gmail.com",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahuldon.v@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="rahul254771@gmail.com",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahul254771@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="rahul254771@gmail.com",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahul254771@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="rahul254771@gmail.com",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahul254771@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="rahul254771",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahul254771@gmail.com"
+recipients <- c("rahul254771@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="rahul254771",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahulperumpallil@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name= "smtp.gmail.com", port = 465,user.name="rahulperumpallil",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahulperumpallil@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name= "smtp.gmail.com", port = 465,user.name="rahulperumpallil",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahulperumpallil@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name= "smtp.gmail.com", port = 465,user.name="rahulperumpallil@gmail.com",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("4771gopalan")
+sender <- "rahulperumpallil@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name="smtp.gmail.com",port=465,user.name="rahulperumpallil@gmail.com",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("rahul254771")
+sender <- "rahulperumpallil@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name="smtp.gmail.com",port=465,user.name="rahulperumpallil@gmail.com",password=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("rahul254771")
+sender <- "rahulperumpallil@gmail.com"
+recipients <- c("rahulperumpallil@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name="smtp.gmail.com",port=465,user.name="rahulperumpallil@gmail.com",passwd=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+require("mailR")
+PASS <- as.character("rahul254771")
+sender <- "rahulperumpallil@gmail.com"
+recipients <- c("rahul254771@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name="smtp.gmail.com",port=465,user.name="rahulperumpallil@gmail.com",passwd=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+email
+require("mailR")
+PASS <- as.character("rahul254771")
+sender <- "rahulperumpallil@gmail.com"
+recipients <- c("rahul254771@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name="smtp.gmail.com",port=465,user.name="rahulperumpallil@gmail.com",passwd=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+email
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+require("mailR")
+PASS <- as.character("rahul254771")
+sender <- "rahulperumpallil@gmail.com"
+recipients <- c("rahul254771@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name="smtp.gmail.com",port=465,user.name="rahulperumpallil@gmail.com",passwd=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()
+rmarkdown::render_site()

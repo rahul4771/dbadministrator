@@ -1,0 +1,88 @@
+require("mailR")
+PASS <- as.character("rahul254771")
+sender <- "rahulperumpallil@gmail.com"
+recipients <- c("rahul254771@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name="smtp.gmail.com",port=465,user.name="rahulperumpallil@gmail.com",passwd=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+
+
+</div><br><br>
+<div class="container">  
+  <form action="" method="post">
+    <h3>Setup Outgoing Email</h3>
+    <fieldset>
+      Email Server Name      : <input placeholder="Name" type="text" tabindex="1" id="servername" required>
+    </fieldset>
+    <span id="postcode_err" class="error_msg "></span>
+    <fieldset>
+      From Address           : <input placeholder="From" type="email" tabindex="2" id="fromemail" required>
+    </fieldset>
+    <fieldset>
+      Subject Prefix         : <input placeholder="Prefx" type="text" tabindex="3" id="subject" required>
+    </fieldset>
+    <fieldset>
+      Protocol               : <input placeholder="Protocol" type="text" tabindex="4" id="protocol" required>
+    </fieldset>
+    <fieldset>
+      Host name               : <input placeholder="Host name" type="text" tabindex="5" id="hostname" required>
+    </fieldset>
+    <fieldset>
+      Port                   : <input placeholder="port" type="text" tabindex="6" id="port" required>
+    </fieldset>
+    <fieldset>
+      Timeout                : <input placeholder="in seconds" type="text" tabindex="7" id="timeout" required>
+    </fieldset>
+    <fieldset>
+      Username               : <input placeholder="username" type="text" tabindex="8" id="username" required>
+    </fieldset>
+    <fieldset>
+      Password               : <input placeholder="password" type="password" tabindex="9" id="password" required>
+    </fieldset>
+    <fieldset>
+      <input type="button" id="contactemail" value="Test Email">
+    </fieldset>
+    <fieldset>
+      <input type="button" id="save_button" value="Save">
+    </fieldset>
+  </form>
+</div>
+
+<script>
+$(document).ready(function(){
+
+
+  $('#servername').on("keyup", function(e) {
+    let txtPostCode = $('#servername').val();
+    if ($.trim(txtPostCode).length == 0) {
+      $("#postcode_err").text("Please Enter Valid UK Postcode").show();
+    } else{
+      $("#postcode_err").text("Invalid UK Postcode").show();
+    }
+  });
+
+  $("#contactemail").click(function() {
+    let txtPostCode = $('#servername').val();
+    console.log(txtPostCode);
+
+require("mailR")
+PASS <- as.character("rahul254771")
+sender <- "rahulperumpallil@gmail.com"
+recipients <- c("rahul254771@gmail.com")
+email <- send.mail(from = sender,
+to = recipients,
+subject="Subject of the email",
+body = "Body of the email",
+smtp = list(host.name="smtp.gmail.com",port=465,user.name="rahulperumpallil@gmail.com",passwd=PASS,ssl=TRUE),
+authenticate = TRUE,
+send = TRUE)
+
+
+  });
+
+});
+</script>

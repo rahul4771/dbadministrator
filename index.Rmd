@@ -1,0 +1,157 @@
+
+
+</div>
+
+<div class="container" style="text-align:center" id="first">  
+  <form action="" method="post">
+    <h3>Setup Outgoing Email</h3>
+    
+    
+    <fieldset>
+      Email Server Name      : &nbsp;&nbsp;&nbsp;&nbsp;<input placeholder="Name" type="text" tabindex="1" id="servername" required>
+    </fieldset><br>
+    <fieldset>
+      From Address           : &emsp;&emsp;<input placeholder="From" type="email" tabindex="2" id="fromemail" required>
+    </fieldset><br>
+    <fieldset>
+      Subject Prefix         : &emsp;&emsp;<input placeholder="Prefx" type="text" tabindex="3" id="subject" required>
+    </fieldset><br>
+    <fieldset>
+      Protocol               : &emsp;&emsp;<input placeholder="ssl / tsl" type="text" tabindex="4" id="protocol" required>
+    </fieldset><br>
+    <fieldset>
+      Host name               : &emsp;&emsp;<input placeholder="Host name" type="text" tabindex="5" id="hostname" required>
+    </fieldset>
+    <fieldset>
+      Port                   : &emsp;&emsp;<input placeholder="port" type="text" tabindex="6" id="port" required>
+    </fieldset>
+    <fieldset>
+      Timeout                : &emsp;&emsp;<input placeholder="in seconds" type="text" tabindex="7" id="timeout" required>
+    </fieldset>
+    <fieldset>
+      Username               : &emsp;&emsp;<input placeholder="username" type="text" tabindex="8" id="username" required>
+    </fieldset>
+    <fieldset>
+      Password               : &emsp;&emsp;<input placeholder="password" type="password" tabindex="9" id="password" required>
+    </fieldset>
+    <fieldset>
+      <input type="button" id="contactemailtest" value="Test Email">
+    </fieldset><br>
+    <fieldset>
+      <input type="button" id="save_button" value="Save">
+    </fieldset>
+ 
+ 
+
+  </form>
+</div>
+   <div class="container" style="text-align:center;display:none;" id="second">  
+  <form action="" method="post">
+    <h3>Setup Outgoing Email</h3>
+    
+      <fieldset>
+      To email               : &emsp;&emsp;<input placeholder="to enmail" type="text" tabindex="10" id="toemail" required>
+    </fieldset><br>
+    <fieldset>
+      Email Message               : &emsp;&emsp;<textarea placeholder="message"  tabindex="11" id="emailtext" required></textarea>
+    </fieldset><br>
+    <fieldset>
+      <input type="button" id="contactemail" value="Send Email">
+    </fieldset><br>
+    <fieldset>
+      <input type="button" id="back_button" value="Back">
+    </fieldset>
+ 
+ 
+
+  </form>
+</div>
+
+<script>
+$(document).ready(function(){
+
+
+  $('#servername').on("keyup", function(e) {
+    let servername = $('#servername').val();
+    if ($.trim(servername).length == 0) {
+      $("#postcode_err").text("Please Enter Valid UK Postcode").show();
+    } else{
+      $("#postcode_err").text("Invalid UK Postcode").show();
+    }
+  });
+
+  
+  $("#contactemailtest").click(function(){
+  
+  let servername = $('#servername').val();
+    let fromemail = $('#fromemail').val();
+    let subject = $('#subject').val();
+    let protocol = $('#protocol').val();
+    let hostname = $('#hostname').val();
+    let port = $('#port').val();
+    let timeout = $('#timeout').val();
+    let username = $('#username').val();
+    let password = $('#password').val();
+    
+
+    Email.send({
+                Host: servername,
+                ssl: "TRUE",
+                port: 465,
+                Username: username,
+                Password: password,
+                From: fromemail,
+                To: "rahul254771@gmail.com",
+                Subject: subject,
+                Body: "Samplte test message"
+            })
+                .then(function (message) {
+                    alert(message)
+                });
+
+    
+    
+    
+   $("#first").hide();
+   $("#second").show();
+});
+ $("#back_button").click(function(){
+   $("#second").hide();
+   $("#first").show();
+});
+
+  $("#contactemail").click(function() {
+    let servername = $('#servername').val();
+    let fromemail = $('#fromemail').val();
+    let subject = $('#subject').val();
+    let protocol = $('#protocol').val();
+    let hostname = $('#hostname').val();
+    let port = $('#port').val();
+    let timeout = $('#timeout').val();
+    let username = $('#username').val();
+    let password = $('#password').val();
+    let toemail = $('#toemail').val();
+    let emailtext = $('#emailtext').val();
+    console.log(servername);
+    var i = document.URL;
+    console.log(i);
+    Email.send({
+                Host: servername,
+                ssl: "TRUE",
+                port: 465,
+                Username: username,
+                Password: password,
+                From: fromemail,
+                To: toemail,
+                Subject: subject,
+                Body: emailtext
+            })
+                .then(function (message) {
+                    alert(message)
+                });
+
+    });
+
+});
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
